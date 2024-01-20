@@ -1,0 +1,12 @@
+学习如何封装ijk播放器
+1、ijk是开源项目，是一个基于ffmpeg的播放器，通过开源项目编译出so文件，
+2、将so文件导入ijk-player-java模块中，便可以通过java代码创建一个真正的Android播放器
+    - 将so文件导入jnilib目录
+    - 指定支持的cpu架构
+
+
+本项目中也需要学习打包aar
+1、创建lib模块
+2、在gradle文件中指定cpu架构，和指定的so文件目录
+3、将so文件导入lib目录
+4、在gradle插件中找到bundleReleaseAar   或者在命令行执行：gradlew bundleReleaseAar
